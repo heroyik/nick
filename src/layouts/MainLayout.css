@@ -1,0 +1,29 @@
+.main-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    margin-top: 0;
+    /* Header is sticky */
+    padding: 32px;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    flex: 1;
+}
+
+.main-content.sidebar-open {
+    margin-left: 280px;
+}
+
+.main-content.sidebar-closed {
+    margin-left: 80px;
+}
+
+@media (max-width: 600px) {
+
+    .main-content.sidebar-open,
+    .main-content.sidebar-closed {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,89 @@
+.edit-labels-modal {
+    width: 300px;
+    max-width: 90vw;
+    padding: 0;
+}
+
+.edit-labels-modal .modal-header {
+    padding: 15px;
+    border-bottom: none;
+}
+
+.edit-labels-modal .modal-body {
+    padding: 0 15px 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.create-label-row,
+.label-row {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.label-row:hover .icon-btn {
+    opacity: 1;
+}
+
+.create-label-row input,
+.label-row input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid transparent;
+    padding: 8px;
+    font-size: 14px;
+    background: transparent;
+    color: var(--color-on-surface);
+}
+
+.create-label-row input:focus,
+.label-row input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.icon-btn {
+    padding: 8px;
+    cursor: pointer;
+    color: var(--color-on-surface-variant);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    background-color: var(--color-surface-variant);
+    color: var(--color-on-surface);
+}
+
+.label-name {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 10px 15px;
+    border-top: 1px solid var(--color-outline-variant);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.done-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-on-surface);
+}
+
+.done-btn:hover {
+    background-color: var(--color-surface-variant);
+}

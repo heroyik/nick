@@ -1,0 +1,156 @@
+.create-note-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 32px 16px;
+}
+
+.create-note {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+    width: 100%;
+    max-width: 600px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid var(--color-outline-variant);
+}
+
+.create-note__collapsed {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: text;
+}
+
+.create-note__collapsed input {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-on-surface);
+    background: transparent;
+}
+
+.create-note__collapsed input:focus {
+    outline: none;
+}
+
+.create-note__actions {
+    display: flex;
+    gap: 16px;
+    color: var(--color-on-surface-variant);
+}
+
+.create-note__expanded {
+    padding: 12px 16px;
+}
+
+.create-note__title {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--color-on-surface);
+    background: transparent;
+}
+
+.create-note__title:focus {
+    outline: none;
+}
+
+.create-note__content {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    resize: none;
+    min-height: 46px;
+    color: var(--color-on-surface);
+    background: transparent;
+    margin-bottom: 12px;
+}
+
+.create-note__content:focus {
+    outline: none;
+}
+
+.create-note__labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.create-note__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-note__tools {
+    display: flex;
+    gap: 8px;
+}
+
+.create-note__image-preview {
+    position: relative;
+    width: 100%;
+}
+
+.create-note__image-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.remove-image-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-image-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-on-surface-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-on-surface);
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-on-surface);
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
